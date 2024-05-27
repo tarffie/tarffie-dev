@@ -36,10 +36,8 @@
   color: #fff;
 }
 .projectsList {
-  margin: 0;
-  padding: 0;
+  margin-left: 1em;
   display: grid;
-  list-style-type : '- ';
   gap: 1rem; 
 }
 .git-branch-icon {

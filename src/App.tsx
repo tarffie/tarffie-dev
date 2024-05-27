@@ -63,20 +63,31 @@ function App() {
       color: "#fff",
     }}>
     <Box component="section" sx={{ p: 2}}>
-    <h2 className="fira-mono-medium" style={{ textAlign: "left", }}>My Projects 🖥️</h2> 
+    <h2 style={{ textAlign: "left", }}>My Projects 🖥️</h2> 
     <p className="fira-mono-regular"> 
-    My projects focus now on making low level applications using c++ and / or rust language or actually just setting up OSes: 
-      </p>
+      My projects focus now on making low level applications using c++ and / or rust language or actually just setting up OSes: 
+    </p>
+    </Box>
+    <Box className="projectsList" component="div" sx={{ p: 2 }}>
+        <h2><span className="git-branch-icon"></span><a href={autolinker} target="_blank">AutoLinker</a></h2>
+          <p> Application made in C++ inspired by Yay from Arch Linux, made to manipulate tarballs and link then into my /usr/bin directory.</p> 
+        <h2><span className="git-branch-icon"></span><a href={emacs} target="_blank">Emacs Config</a></h2>
+          <p> Little config made for vanilla emacs aimed to achieve a fully operational CIDE without using frameworks or anything like that. Does not Include Evil </p> 
+        <h2><span className="git-branch-icon"></span><a href={dotfiles} target="_blank">Dotfiles</a></h2>
+          <p> My home-baked dotfiles for my linux system and other side projects I did, like a gentoo setup </p> 
     </Box>
     <Box component="div" sx={{ p: 2 }}>
-      <div className="projectsList">
-        <h2 className="fira-mono-medium"><span className="git-branch-icon"></span><a href={autolinker} target="_blank">AutoLinker</a></h2>
-          <p> Application made in C++ inspired by Yay from Arch Linux, made to manipulate tarballs and link then into my /usr/bin directory.</p> 
-        <h2 className="fira-mono-medium"><span className="git-branch-icon"></span><a href={emacs} target="_blank">Emacs Config</a></h2>
-          <p> Little config made for vanilla emacs aimed to achieve a fully operational CIDE without using frameworks or anything like that. Does not Include Evil </p> 
-        <h2 className="fira-mono-medium"><span className="git-branch-icon"></span><a href={dotfiles} target="_blank">Dotfiles</a></h2>
-          <p> My home-baked dotfiles for my linux system and other side projects I did, like a gentoo setup </p> 
-      </div> 
+    <h2> My work 🗂️ </h2>
+    <ul>
+      <li>
+        <h2 className="fira-mono-medium"> Promethean Inc </h2>
+        <p>Developed assets, debbuging tools and backend structure for mobile games, mostly rogue likes </p> 
+      </li>
+      <li>
+        <h2 className="fira-mono-medium"> Infopecas </h2>
+        <p>Repair and maintain computers, sales and maintaining their website</p> 
+      </li>
+    </ul>
     </Box>
     </Item>
     </Grid>
