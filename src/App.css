@@ -1,0 +1,70 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.intro {
+  width: 50%;
+  display: block;
+  margin-left : auto;
+  margin-right : auto;
+}
+.intro > div > img {
+  border-radius : 25%;
+  width: 250px;
+}
+
+.mainLinks ul {
+  padding-left : -6px; 
+}
+.mainLinks li {
+  margin: 0px 10px;
+  display: inline-block;
+}
+.mainLinks a,
+.projectsList a {
+  color: #fff;
+}
+.mainLinks a:hover, 
+.projectsList a:hover {
+  color: #7d7d7d;
+  transition: 0.3s;
+}
+.introPar {
+  color: #fff;
+}
+.projectsList {
+  margin-left: 1em;
+  display: grid;
+  gap: 1rem; 
+}
+.git-branch-icon {
+  content: url('assets/images/icons8-code-24.png');
+  width: 15px;
+  padding: 1px 6px 0px 0px;
+}
+
+@media screen and (min-width: 80rem) {
+  
+}
+
+
+.fira-mono-regular {
+  font-family: "Fira Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fira-mono-medium {
+  font-family: "Fira Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.fira-mono-bold {
+  font-family: "Fira Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
