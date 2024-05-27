@@ -11,7 +11,7 @@
   margin-left : auto;
   margin-right : auto;
 }
-.intro > div > img {
+.intro div img {
   border-radius : 25%;
   width: 250px;
 }
@@ -47,9 +47,33 @@
 }
 
 @media screen and (min-width: 80rem) {
-  
+  .intro {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-content: center;
+  }
+  .intro img {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-
+@media screen and (min-width: 600px) and (max-width: 79.999rem) {
+  .intro {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-content: center;
+  }
+  .intro img {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .fira-mono-regular {
   font-family: "Fira Mono", monospace;
