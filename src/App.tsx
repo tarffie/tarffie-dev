@@ -3,12 +3,10 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import './App.css';
-
 // * icon imports
 import GitHubIcon from '@mui/icons-material/GitHub';
 import XIcon from '@mui/icons-material/X';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import gitBanchIcon from 'assets/images/icons8-code-24.png';
 // * importing pictLeft ures 
 import Yoru from './assets/images/yoru.jpg';
 
@@ -28,16 +26,14 @@ function App() {
   return (
     <Grid container spacing={2}>
     <Item xs={12} md={6} className="intro">
-    <div>
     <img src={Yoru} alt='Picture of manga "Chainsaw Man" by Tatsuki Fujimoto, showing Yoru'
     style={{
       borderRadius: '25%',
       width: '250px',
           }}/>
-    </div>
     </Item>
     <Box component="section" sx={{ p: 2, borderBottom: '1px solid dark-grey', width : "100%"}}>
-    <Item className="intro">
+    <Item>
     <ul className="mainLinks" style={{
       listStyle: "none",
       paddingLeft: "0px",
@@ -66,12 +62,13 @@ function App() {
     <Item className="projects" style={{
       color: "#fff",
     }}>
-      <Box component="section" sx={{ p: 2}}>
-        <h2 className="fira-mono-medium" style={{ textAlign: "left", }}>My Projects 🖥️</h2> 
-        <p className="fira-mono-regular"> 
-          My projects focus now on making low level applications using c++ and / or rust language or actually just setting up OSes: 
-        </p>
-      <Box component="div" sx={{ p: 2 }}>
+    <Box component="section" sx={{ p: 2}}>
+    <h2 className="fira-mono-medium" style={{ textAlign: "left", }}>My Projects 🖥️</h2> 
+    <p className="fira-mono-regular"> 
+    My projects focus now on making low level applications using c++ and / or rust language or actually just setting up OSes: 
+      </p>
+    </Box>
+    <Box component="div" sx={{ p: 2 }}>
       <div className="projectsList">
         <h2 className="fira-mono-medium"><span className="git-branch-icon"></span><a href={autolinker} target="_blank">AutoLinker</a></h2>
           <p> Application made in C++ inspired by Yay from Arch Linux, made to manipulate tarballs and link then into my /usr/bin directory.</p> 
@@ -80,29 +77,9 @@ function App() {
         <h2 className="fira-mono-medium"><span className="git-branch-icon"></span><a href={dotfiles} target="_blank">Dotfiles</a></h2>
           <p> My home-baked dotfiles for my linux system and other side projects I did, like a gentoo setup </p> 
       </div> 
-      </Box>
-    </Box>
-    </Item>
-    <Item className="projects" style={{
-      color: "#fff",
-    }}>
-    <Box component="section" sx={{ p: 2}}>
-    <h2 className="fira-mono-medium">My work 🗂️ </h2>
-      <Box component="div" sx={{ p: 2 }}>
-        <ul className="projectsList">
-          <li> <h2 className="fira-mono-medium"><a href="https://www.linkedin.com/company/promethean-interactive">Promethean Inc</a></h2>
-              <p>Developed assets, debugging tools and provided backend structure for mobile games, mostly roguelikes</p> 
-          </li>
-          <li> <h2 className="fira-mono-medium"><a href="https://www.infopecas.com.br/"> Infopecas </a></h2>
-              <p>Maintain and make repairs to computers, sales and even maintain their website</p> 
-          </li>
-        </ul> 
-      </Box>
     </Box>
     </Item>
     </Grid>
   );
 }
-
 export default App;
-
