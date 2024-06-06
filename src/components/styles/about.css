@@ -5,6 +5,8 @@
   text-align: center;
 }
 
+
+
 .intro {
   width: 50%;
   display: block;
@@ -40,6 +42,7 @@
   display: grid;
   gap: 1rem; 
 }
+
 .git-branch-icon {
   content: url('assets/images/icons8-code-24.png');
   width: 15px;
@@ -47,18 +50,30 @@
 }
 
 @media screen and (min-width: 80rem) {
-  .intro {
-    width: 100%;
-    display: flex;
-    text-align: center;
-    align-content: center;
-  }
-  .intro img {
-    width: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    .header {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 4em;
+    }
+    .header a {
+	color: #f4f2f2;
+	margin-right: 2em;
+    }
+    .header a:hover {
+	color: #cecece;
+    }
+    .intro {
+	width: 100%;
+	display: flex;
+	text-align: center;
+	align-content: center;
+    }
+    .intro img {
+	width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+    }
 }
 @media screen and (min-width: 600px) and (max-width: 79.999rem) {
   .intro {
