@@ -11,16 +11,16 @@ import  Root from "./routes/root.tsx";
 import './index.css';
 
 const router = createBrowserRouter([
-    {
-        path : "/",
-        element: <About />,
-        errorElement: <ErrorPage />,
-    }, 
-    {
-        path : "/blog",
-        element: <Blog />,
-        errorElement: <ErrorPage />,
-    }, 
+  {
+    path : "/",
+    element: <About />,
+    errorElement: <ErrorPage />,
+  }, 
+  {
+    path : "/blog",
+    element: <Blog />,
+    errorElement: <ErrorPage />,
+  }, 
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

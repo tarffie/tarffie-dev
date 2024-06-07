@@ -1,8 +1,7 @@
-import { Types } from "../components/types.ts";
+import  { Types } from "../components/types.ts";
 
-class Post {
-    title : Types.Title;
-    body : Types.Body;
+export function CreatePost() {
+
 }
 
 export default function Blog() {
