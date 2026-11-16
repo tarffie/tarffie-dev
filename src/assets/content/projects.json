@@ -1,0 +1,25 @@
+{
+  "projects": [
+    {
+      "title": "Ordem Paranormal Vigilia",
+      "description": "Table Top simulator and other tools used to record rpg sessions",
+      "technologies": [
+        "Unity3D",
+        "Substance 3D Designer",
+        "Spines",
+        "Photon Unity Network",
+        "Odin",
+        "Rewired"
+      ]
+    },
+    {
+      "title": "Cellbit Escapa",
+      "description": "Low poly ps1 inspired game used as a tool during Cellbit Escapa livestream",
+      "technologies": [
+        "Unity3D",
+        "Spines",
+        "Rewired"
+      ]
+    }
+  ]
+}

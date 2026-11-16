@@ -1,0 +1,36 @@
+{
+  "homeUrl": "http://localhost:5173",
+  "projects": {
+    "chattar": {
+      "title": "Chattar",
+      "description": "Privacy focused Open source alternative to Discord",
+      "stack": [
+        "bun",
+        "typescript",
+        "react",
+        "express",
+        "grafana",
+        "containerd",
+        "K8s"
+      ]
+    },
+    "iso8583": {
+      "title": "iso8583-simulator",
+      "description": "Simulator for iso8583 standard, focused on financial transactions",
+      "stack": [
+        "bun",
+        "typescript"
+      ]
+    },
+    "Lain": {
+      "title": "Lain",
+      "description": "Discord bot to play RPG",
+      "stack": [
+        "docker",
+        "typescript",
+        "pnpm",
+        "discord.js"
+      ]
+    }
+  }
+}
